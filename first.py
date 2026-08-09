@@ -3,3 +3,5 @@ print("Your age is: ", age)
 
 marks = 34
 print("Your marks is:", marks)
+text = "I am Learning Python"
+print(text)
