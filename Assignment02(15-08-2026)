@@ -21,7 +21,7 @@
 
 
 account_balance = 5000
-withdrawal_amount = 6000
+withdrawal_amount = 4000
 
 if withdrawal_amount <= account_balance:
     new_balance = account_balance - withdrawal_amount
