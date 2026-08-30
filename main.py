@@ -1,5 +1,4 @@
 import greetings
-import datetime
+greetings.welcome_string()
 print(greetings.app_name)
-print(greetings.welcome_message)
-print(datetime.date.today())
+greetings.today_date()
