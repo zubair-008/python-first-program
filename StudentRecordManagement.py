@@ -75,11 +75,18 @@ def random_student():
     student_of_the_day = random.choice(students) 
     print(student_of_the_day)
 
-
+def delete_record():
+    search_by_name = input("Enter Name You Want to Remove: ")
+    for student in students:
+        if student["name"] == search_by_name:
+            students.remove(student)
+            print(students)
+    else:
+        print("Student Not Found!")
 choice = 0
 
-while choice != 7:
-    print("\n1. Add Student\n2. View Record\n3. Search\n4. Update Marks\n5. See Class Statics\n6. Student of Day\n7. Exit")
+while choice != 8:
+    print("\n1. Add Student\n2. View Record\n3. Search\n4. Update Marks\n5. See Class Statics\n6. Student of Day\n7. Remove Students\n8. Exit")
     choice = int(input("Enter Your Choixe: "))
     if choice == 1:
         add_student()
@@ -100,6 +107,9 @@ while choice != 7:
         random_student()
         # print("Student of The Day")
     elif choice == 7:
+        delete_record()
+        # print("Remove Students")
+    elif choice == 8:
         print("Exit")
     else:
         print("Enter Valid CHoice")
