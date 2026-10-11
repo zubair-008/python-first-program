@@ -1,0 +1,7 @@
+num = int(input("Enter Your Number: "))
+print(num == 20)
+print(num != 20)
+print(num > 20)
+print(num < 20)
+print(num >= 20)
+print(num <= 20)

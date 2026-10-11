@@ -1,0 +1,37 @@
+#write a Python Program that:
+# 1. Stores an account_balance variable (e.g., 5000)
+# 2. Stores a withdrawal_amount variable (e.g., 2000)
+# 3. Uses if-else to:
+#       print "Withdrawal Successful" and show the new balance, if withdrawal_amount <= account_balance.
+#       print "Insufficient Balance", if not.
+# 4. Bonus: Add an elif branch that prints a special warning ("Low Balance Alert") if the balance after withdrawal would drop below Rs. 500.
+
+# account_balance = 5000
+# withdrawal_amount = int(input("Enter Your Withdrawal Amouunt: "))
+
+# if withdrawal_amount <= account_balance:
+#     new_balance = account_balance - withdrawal_amount
+    
+#     if new_balance <= 500:
+#         print("Low Balance Alert")
+#     print("Withdrawal Successful")
+#     print("New Balance", new_balance)
+# else:
+#     print("Insufficient Balance")
+
+
+account_balance = 5000
+withdrawal_amount = 4000
+
+if withdrawal_amount <= account_balance:
+    new_balance = account_balance - withdrawal_amount
+
+    if new_balance < 500:
+        print("Withdrawal Successful")
+        print("New Balance: Rs.", new_balance)
+        print("Low Balance Alert")
+    elif new_balance >= 500:
+        print("Withdrawal Successful")
+        print("New Balance: Rs.", new_balance)
+else:
+    print("Insufficient Balance")

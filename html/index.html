@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Store.pk</title>
+</head>
+<body>
+    <h1>Store.pk</h1>
+    <container id="nav-container">
+        <div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </div>
+        <div>
+            <input type="text" class="search" placeholder="Search.........">
+        </div>
+    </container>
+
+    <h1>Full Name: Zubair Tariq</h1>
+    <h2>Phone: 03708922295</h2>
+    <h3>Email: zubairstarboy008@gmail.com</h3>
+    <h4>Course: Python Programming</h4>
+    <h5>Address: Lahore</h5>
+    <h6>Institute: PNY</h6>
+    <p>I am Zubair from Lahore. 
+    I am learning Full Stack Python Programming from PNY instute Daraghawala Branch. 
+    My Goal is to develop projects which can solve real world problems</p>
+
+    <input type="text" placeholder="Search Here....">
+    <img style="height: 200px; width: 400px;" 
+    src="images/images.jpg" alt="Koi Image Nhi ha">
+
+    <ol>
+        <li>Affordable Price</li>
+        <li>Free Shipping</li>
+    </ol>
+
+    <ul>
+        <li>Hight Quality Accessories</li>
+        <li>Fast Shipping</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Sr#</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Availablity</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Graphics Card</td>
+            <td>$300.00</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>RAM</td>
+            <td>$50.00</td>
+            <td>Out of Stock</td>
+        </tr>
+    </table>
+
+    <form action="submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="message">Message:</lable>
+        <textarea id="message" name="message"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
